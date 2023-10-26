@@ -1,18 +1,18 @@
-package repositorio_array;
+package repositorio_array; //pacote
 
-public class RepositorioContasArray {
+public class RepositorioContasArray { //classe
 
-	private Conta[] contas;
-	private int indice;
+	private Conta[] contas; //objeto conta
+	private int indice; //objeto indice
 
-	public RepositorioContasArray() {
-		contas = new Conta[100];
-		indice = 0;
+	public RepositorioContasArray() {  //declarando array
+		contas = new Conta[100]; //conta recebe um array com 100 posições
+		indice = 0; //indice possui zero
 	}
 
-	public void inserir(Conta conta) {
-		contas[indice] = conta;
-		indice = indice + 1;
+	public void inserir(Conta conta) { 
+		contas[indice] = conta; //permite inserir valores da conta 
+		indice = indice + 1; //incrementa mais 1 no indice
 	}
 
 	public void atualizar(Conta conta)  {
